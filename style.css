@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #FCEEBB;
+}
+nav{
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 70px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+.checkbtc{
+    font-size: 40px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    nav{
+        height: 150px;
+    }
+    #info div{
+        width: 80%;
+        display: block;
+        margin: 30px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtc{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 20vh;
+        background-color: #d7cca4;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    #events div{
+        margin: 0px;
+        display: block;
+        padding: 0px;
+    }
+    #events{
+        padding: 0%;
+    }
+}
+#start{
+    background: url(img/student\ revolution.jpeg);
+    width: 80%;
+    height: 400px;
+    background-repeat: repeat-x;
+    background-size: 400px;
+    margin: auto;
+    border-radius: 40px;
+    margin-bottom: 60px;
+}
+#voz{
+    text-align: center;
+}
+.vozP{
+    max-width: 250px;
+    max-height: 250px;
+    background-color: gray;
+    display: inline-block;
+    border-radius: 50%;
+    margin: max(10px, 30px);
+}
+#info div, #info img{
+    font-size: 30px;
+    display: inline-block;
+    line-height: 40px;
+}
+#info div{
+    margin-right: 100px;
+    max-width: 700px;
+}
+#info img{
+    border-radius: 100%;
+    height: 300px;
+    width: 200px;
+}
+#info{
+    text-align: center;
+    margin-top: 80px;
+}
+#events{
+    background-color: burlywood;
+    text-align: center;
+    padding: 30px;
+    margin-top: 60px;
+    width: 100%;
+}
+#events img{
+    max-width: 300px;
+    border-radius: 40px;
+}
+#events div{
+    padding: 40px;
+    background-color: #FCEEBB;
+    border-radius: 60px;
+    display: inline-block;
+    max-width: 400px;
+    overflow-wrap: break-word;
+    margin: 20px;
+}
+footer{
+    background-color: #505050;
+    font-size: 50px;
+    text-align: center;
+}
+footer a{
+    color: white;
+    display: inline-block;
+    margin: 20px;
+}
